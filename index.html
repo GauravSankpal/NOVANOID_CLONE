@@ -7,6 +7,8 @@
     <title>NovaNoid</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
     <!-- <style></style> -->
 </head>
 
@@ -16,15 +18,20 @@
         <nav>
             <img src="logo-light.png" alt="">
             <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <!-- <label for="menu-toggle" class="hamburger">&#9776;</label> -->
+            <label id="nav-icon1" for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <ul class="navbar_ul">
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">WORKS</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">TEAM</a></li>
+                <li><a href="#wrks">WORKS</a></li>
+                <li><a href="#srvc">SERVICES</a></li>
+                <li><a href="#tm">TEAM</a></li>
                 <li><a href="#">PRICES</a></li>
                 <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACTS</a></li>
+                <li><a href="#cu">CONTACTS</a></li>
             </ul>
         </nav>
     </header>
@@ -38,7 +45,7 @@
 
     <!--Main Body-->
     <main>
-        <section class="features">
+        <section class="features distance">
             <div class="box" id="box1">
                 <div class="item" id="item1"></div>
                 <div class="text_content">
@@ -88,8 +95,8 @@
                 </div>
             </div>
         </section>
-        <section class="works">
-            <div class="works_container">
+        <section id="wrks" class="works">
+            <div class="works_container distance">
                 <h2>OUR WORKS</h2>
                 <span></span>
                 <p>Praesent lacinia sem sed risus consectetur, et volutpat nulla bibendum.</p>
@@ -117,7 +124,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section id="srvc" class="services distance">
             <div class="services_container">
                 <h2>OUR SERVICES</h2>
                 <span></span>
@@ -169,7 +176,7 @@
                 </div>
             </div>
         </section>
-        <section class="parallax">
+        <section class="parallax distance">
             <div class="parallax_container">
                 <h2>WE <i class="far fa-heart"></i> PARALLAX BACKGROUNDS</h2>
                 <p>Ut consectetur eros vitae mi imperdiet, nec ullamcorper risus dignissim. Fusce ac
@@ -177,7 +184,7 @@
                 <a href="#">READ MORE</a>
             </div>
         </section>
-        <section class="team">
+        <section id="tm" class="team distance">
             <div class="team_container">
                 <h2>OUR TEAM</h2>
                 <span></span>
@@ -271,7 +278,7 @@
 
     <!--Footer-->
     <footer>
-        <div class="indents">
+        <div id="cu" class="indents distance">
             <img src="logo-light.png" alt="">
             <ul>
                 <li><i class="fab fa-facebook-f"></i></li>
@@ -287,4 +294,5 @@
     </footer>
     <!--Footer-->
 </body>
+
 </html>
